@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/task4.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- Header section -->
+    <div class="section-header">
+
+        <div class="header-item__login_page">
+            <a href="#">Login Page</a>
+        </div>
+      <div class="header-right">
+            <div class="header-item__dashboard">
+                <a href="#"><i class="fab fa-windows" id="icon"></i>Dashboard</a>
+            </div>
+
+            <div class="header-item__Register">
+                <a href="#"><i class="fas fa-user-plus" id="icon"></i>Register</a>
+            </div>
+
+            <div class="header-item__login">
+                <a href="#"><i class="fas fa-user" id="icon"></i>Login</a>
+            </div>
+
+            <div class="header-item__Lock">
+                <a href="#"><i class="fas fa-lock" id="icon"></i>Lock</a>
+            </div>
+      </div>
+    </div>
+    <!-- /Header section -->
+
+    <!-- Login section -->
+    <div class="section-login">
+        <div class="container">
+            <form action="#" class="forma" method="post">
+                {% csrf_token %}
+                <div class="login-social">
+                    <h3>Login</h3>
+                    <p>Hello let's get started</p>
+                    <div class="social-items">
+                        <a href="#">
+                            <i class="fab fa-google-plus-g" id="icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram" id="icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook" id="icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <h2>OR</h2>
+                <div class="input-box">
+                    <div class="email-box">
+                        <label for="first_name">First name</label><br>
+                        <input type="text" class="first_name" id="first_name" name="first_name" required>
+                    </div>
+                    <div class="email-box">
+                        <label for="last_name">Last name</label><br>
+                        <input type="text" class="last_name" id="last_name" name="last_name" required>
+                    </div>
+                    <div class="email-box">
+                        <label for="email">Email</label><br>
+                        <input type="email" class="email" id="email" name="email" required>
+                    </div>
+                    <div class="email-box">
+                        <label for="phone">Phone</label><br>
+                        <input type="phone" class="phone" id="phone" name="phone" required>
+                    </div>
+
+
+                   <div class="password-box">
+                    <label for="password">Pasword</label><br>
+                    <input type="password" class="password" id="password" name="password" required>
+                   </div>
+
+                    <div class="password-box">
+                    <label for="password2">Confirm Pasword</label><br>
+                    <input type="password" class="password2" id="password2" name="password2" required>
+                   </div>
+                </div>
+
+
+                <button class="login">Register</button>
+            </form>
+        </div>
+    </div>
+    <!-- /Login section -->
+
+    <!-- Footer section -->
+
+    <!-- Footer section -->
+</body>
+</html>
